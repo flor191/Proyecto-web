@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.header{
+    background-image: url(/imagenes/Cenotafios\ de\ Orchha.png);    
+    background-position: center start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    padding: 3%;
+    color: rgb(223, 220, 37);
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: navy;
+}
+
+
+li{
+    float: left;
+    
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+
+
+.seccion1, .seccion2, .seccion3{
+    margin: 0%;
+    padding-bottom: 1rem;
+    background-color: rgb(208, 213, 233);
+    border: 2px solid blue;
+    display: grid;
+}
+
+.foto{
+    width: 40vw;
+    height: 50vh;
+    margin: 3vw 30vw 3vw auto;
+    box-shadow: -1px 1px 7px 0px black;
+}
+
+h2{
+    color: rgb(143, 141, 29);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2%;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    justify-content: space-between;
+    width: auto;
+    
+}
+
+
+.uno:hover{
+        width: 30%;
+        height: 20%;
+        transition: width 2s;
+        box-shadow: -1px 1px 7px 0px black;
+}
+
+button{
+    width: 10rem;
+    display: grid;
+    justify-content: center;
+	padding: 20px 10px;
+    margin-bottom: 10px;
+	border-radius: 50px 50px 50px 50px;
+    background-color: #204de0;
+    color: antiquewhite;
+    border: 0px;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+
+
+
+.footer{
+    background: navy;
+    width: 100%; 
+    display: grid;
+}
+
+p, a{
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+.pie{
+    text-align: center;
+}
+
+.boton{
+    justify-content: center;
+    background-color: rgb(236, 25, 25);
+    width: 90px;
+    animation-name: bajada;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@media screen and (min-width:800px){
+	.main{
+		width: 100%;
+
+	}    
+}
+
+@media screen and (max-width:600px){
+	.main{
+		width: auto;
+    
+	}
+
+}
+
+@media screen and (max-width:480px){
+	.main{
+		width: auto;
+        
+	}
+}
+
+
+@keyframes bajada {
+	0%{background: rgb(241, 119, 62);}
+    25%{background: rgb(201, 151, 135);}
+	50%{background: rgb(204, 166, 148);}
+    75%{background: #bb554e;}
+	100%{background:rgb(245, 80, 29)}
+    110%{background: #f03729;}
+}
+
+
